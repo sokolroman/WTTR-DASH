@@ -16,7 +16,7 @@ Weather Dashboard that provides todays weather as well as the weather for the ne
 
 ## License
 
-[https://creativecommons.org/licenses/by-sa/4.0/deed.en](CC BY-SA 4.0)
+[ https://creativecommons.org/licenses/by-sa/4.0/deed.en ](CC BY-SA 4.0)
 
 # Links
 
