@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>wttr DASH</title>
+</head>
+
+<body>
+    <h1>WTTR DASH</h1>
+
+    <header>
+        <a href="https://romansokol.com"><img id="emblem" src="./assets/imgs/wtr.png" alt="water"></a>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <form>
+                        <input id="search-button" type="text" placeholder="Search" aria-label="Search">
+                        <button onclick="search()" id="location" type="submit">Search</button>
+                    </form>
+                </li>
+                <li id="time-date"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class='current-forecast'>
+
+            <div id="current-weather-items" class="card-body">
+                <img id="wttr-icon" src="http://openweathermap.org/img/w/03d.png">
+                <h3 id="location" class="city">Todays Weather</h3>
+                <p class="card-text">Temperature: 84.63°F</p>
+                <p class="card-text">Humidity: 58%</p>
+                <p class="card-text">UV Index: 1</p>
+                <p class="card-text">Wind Speed: 15mph</p>
+            </div>
+
+        </div>
+
+            <div class="future-forecast">
+
+                    <div class="card-body">
+                        <img id="wttr-icon" src="https://openweathermap.org/img/w/04d.png">
+                        <h3 class="card-title">September 22, 2022</h3>
+                        <p class="card-text">Wind Speed: 11.77MPH</p>
+                        <p class="card-text">Humidity : 79%</p>
+                        <p class="card-text">Temperature : 56.68°F</p>
+                    </div>
+
+                    <div class="card-body">
+                        <img id="wttr-icon" src="https://openweathermap.org/img/w/02d.png">
+                        <h3 class="card-title">September 23, 2022</h3>
+                        <p class="card-text">Wind Speed: 5.61MPH</p>
+                        <p class="card-text">Humidity : 71%</p>
+                        <p class="card-text">Temperature : 44.46°F</p>
+                    </div>
+                    <div class="card-body">
+                        <img id="wttr-icon" src="https://openweathermap.org/img/w/04d.png">
+                        <h3 class="card-title">September 24, 2022</h3>
+                        <p class="card-text">Wind Speed: 5.28MPH</p>
+                        <p class="card-text">Humidity : 60%</p>
+                        <p class="card-text">Temperature : 55.29°F</p>
+                    </div>
+                    <div class="card-body">
+                        <img id="wttr-icon" src="https://openweathermap.org/img/w/10d.png">
+                        <h3 class="card-title">September 25, 2022</h3>
+                        <p class="card-text">Wind Speed: 5.32MPH</p>
+                        <p class="card-text">Humidity : 98%</p>
+                        <p class="card-text">Temperature : 57.6°F</p>
+                    </div>
+                    <div class="card-body">
+                        <img id="wttr-icon" src="https://openweathermap.org/img/w/04d.png">
+                        <h3 class="card-title">September 26, 2022</h3>
+                        <p class="card-text">Wind Speed: 12.59MPH</p>
+                        <p class="card-text">Humidity : 89%</p>
+                        <p class="card-text">Temperature : 51.42°F</p>
+                    </div>
+                    <div class="card-body">
+                        <img id="wttr-icon" src="https://openweathermap.org/img/w/04d.png">
+                        <h3 class="card-title">September 27, 2022</h3>
+                        <p class="card-text">Wind Speed: 12.59MPH</p>
+                        <p class="card-text">Humidity : 89%</p>
+                        <p class="card-text">Temperature : 51.42°F</p>
+                    </div>
+            </div>
+       <div>
+       
+       </div>
+    </main>
+
+    <footer>
+        <p>Recent Searches:</p>
+        <p id="cityHistory">43119</p>
+    </footer>
+
+</body>
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
