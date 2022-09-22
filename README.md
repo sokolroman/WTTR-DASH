@@ -11,15 +11,19 @@ Weather Dashboard that provides todays weather as well as the weather for the ne
 
 ## Preview
 
-
-    ```md
     ![screenshot 1](assets/imgs/S1.png)
     ![screenshot 2](assets/imgs/S2.png)
-
-    ```
 
 ## License
 
 [https://creativecommons.org/licenses/by-sa/4.0/deed.en](CC BY-SA 4.0).
 
 # WTTR-DASH
+
+
+# Links
+
+[https://github.com/sokolroman/WTTR-DASH](Live)
+[](Repo)
+
+
