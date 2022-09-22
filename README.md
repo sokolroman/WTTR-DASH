@@ -20,7 +20,7 @@ Weather Dashboard that provides todays weather as well as the weather for the ne
 
 # Links
 
-[https://github.com/sokolroman/WTTR-DASH](Live)
-[](Repo)
+[https://github.com/sokolroman/WTTR-DASH](GITHUB REPO)
+[https://sokolroman.github.io/WTTR-DASH/](LIVE)
 
 
