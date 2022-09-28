@@ -1,3 +1,4 @@
+
 *, *::after, *::before { box-sizing:border-box;}
  html,
  body {
@@ -69,6 +70,23 @@ padding:0.5em;
   margin:1em auto;
 }
 
+button {
+  color: #fff;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+
+}
+.popular {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+}
 
 h1 {
     text-align: center;
@@ -77,6 +95,10 @@ h1 {
     letter-spacing: 15px;
     line-height: 1;
     font-weight: 400;
+  }
+  h2 {
+    text-align: center;
+
   }
 
 
