@@ -4,13 +4,14 @@ var searchInput = document.querySelector("#search-text");
 var searchForm = document.querySelector("#search-form");
 var searchesList = document.querySelector("#search-list");
 
+var lat 
+var lon 
+
 var city = document.getElementById("city")
+
 var temp = document.getElementById("temp")
-var highs = document.getElementById("highs")
-var lows = document.getElementById("lows")
 var humidity = document.getElementById("humidity")
 var windSpeed = document.getElementById("wind-speed")
-var conditions = document.getElementById("conditions")
 
 var date = new Date();
 	var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
@@ -19,15 +20,37 @@ var date = new Date();
 	document.getElementById("time-date").innerHTML = date_time;
 console.log(date_time)
 
-function getApi() {
+async function getApi() {
     var cityText = document.querySelector("#search-text").value;
     console.log(cityText)
 
-    fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + cityText + "&id=524901&units=imperial&appid=" + APIkey)
+    response = await fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + cityText + "&id=524901&units=imperial&appid=" + APIkey)
 
     .then(function (response) {
-        return response.json();
-})}
+
+// var data = response.json()
+response.json().then(function(data){
+  // console.log(data.city.coord)
+  console.log(data.city)
+
+city.innerHTML = data.city.name
+
+var lat = data.city.coord.lat
+var lon = data.city.coord.long
+
+fetch("api.openweathermap.org/data/2.5/forecast?lat=" + lat + lon + "&appid=" + APIkey)
+.then(function (response){
+
+  // var data = response.json()
+  response.json().then(function(data){
+    console.log(data)
+  })
+})
+
+})})}
+
+
+
 
 // //function to hold the fetch and data handling.
 var todos = [];
@@ -58,7 +81,6 @@ function init() {
   if (storedTodos !== null) {
     todos = storedTodos;
   }
-
   // This is a helper function that will render todos to the DOM
   renderTodos();
 }
@@ -74,9 +96,12 @@ searchForm.addEventListener("submit", function(event) {
 
   var todoText = searchInput.value.trim();
 
+getApi()
+
   // Return from function early if submitted todoText is blank
   if (todoText === "") {
     return;
+
   }
 
   // Add new todoText to todos array, clear the input
@@ -87,6 +112,8 @@ searchForm.addEventListener("submit", function(event) {
   storeTodos();
   renderTodos();
 });
+
+
 
 // Calls init to retrieve data and render it to the page on load
 init()
