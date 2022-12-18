@@ -14,9 +14,8 @@ With WTTR DASH, you can:
 
 ## Preview
 
-  ![screenshot 1](/assets/imgs/S1.png)
-  ![screenshot 2](/assets/imgs/S2.png)
-
+  ![screenshot 1](/assets/imgs/WTTR DASH.JPG)
+  
 ## License
 
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
