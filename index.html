@@ -12,55 +12,35 @@
 <body>
     <h1>WTTR DASH</h1>
 
-    <header>
-        <a href="https://romansokol.com"><img id="emblem" src="./assets/imgs/wtr.png" alt="water"></a>
-        <nav>
-            <ul class="nav-list">
-                <li>
-                    <form id="search-form">
-                        <input id="search-text" type="text" placeholder="Enter Zip Code" aria-label="Search">
-                    </form>
-                </li>
-                <li id="time-date"></li>
-            </ul>
-        </nav>
-    </header>
+   <header>
+    <form id="search-form">
+        <input id="search-text" type="text" placeholder="Enter City Name" aria-label="Search">
+    </form>
+    <nav>
+        <ul class="nav-list" id="search-history"></ul>
+    </nav>
+</header>
 
-    <main>
-        <div class="popular">
-    <button id="san-juan" class="btn">San Juan</button> |
-    <button id="denver" class="btn">Denver</button> |
-    <button id="miami" class="btn">Miami</button> |
-    <button id="new-york" class="btn">New York</button> |
-    <button id="seattle" class="btn">Seattle</button>
-        </div>
+<main>
+    <div class="current-conditions">
+        <h2 id="city-name"></h2>
+        <p id="current-date"></p>
+        <img id="weather-icon" src="" alt="Weather Icon">
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="wind-speed"></p>
+    </div>
+    <div class="five-day-forecast">
+        <h2>5-Day Forecast</h2>
+        <div class="forecast-cards" id="forecast-cards"></div>
+    </div>
+</main>
+<footer>
+    <p>Created by Roman Sokol</p>
+</footer>
 
-        <div class='current-forecast'>
-            
-            <div class="data-input-card">
-                <p class="data-input" id="city"></p>
-                <p class="data-input" id="temp"></p>
-                <p class="data-input" id="highs"></p>
-                <p class="data-input" id="lows"></p>
-                <p class="data-input" id="humidity"></p>
-                <p class="data-input" id="feels-like"></p>
-                <p class="data-input" id="wind-speed"></p>
-                <p class="data-input" id="conditions"></p>
-              </div>
-              
-        </div>
+<script src="./assets/js/script.js"></script>
 
-        <div class="future-forecast">
-
-        </div>
-       
-    </main>
-
-    <footer>
-        <footer>
-            <p>searches: <span id="search-list"></span></p>
-            <ul class=id="search-list"></ul>
-          </footer>
     </footer>
 
 </body>
