@@ -1,13 +1,16 @@
 
-# <WTTR DASH>
+# WTTR DASH
 
 ## Description
 
-Weather Dashboard that provides todays weather as well as the weather for the next several days:
+WTTR DASH is a simple and easy-to-use weather dashboard that provides real-time and future weather information for a specific location. It is designed to be lightweight and accessible, even on poor internet connections.
 
-- This is usefull for those of us that stay inside and are too lazy to go outside to see how hot it is. 
-- This app was built with the intention of being light and easily accesible even with poor internet. 
-- This app does not have ad's and it is basically idiot proof. 
+With WTTR DASH, you can:
+
+- Get the current temperature, humidity, and wind speed for a location
+- View a 5-day forecast for a location, including date, weather conditions, temperature, wind speed, and humidity
+- Save and view your search history
+- WTTR DASH is ad-free and user-friendly, making it a convenient tool for checking the weather from the comfort of your home.
 
 ## Preview
 
@@ -24,4 +27,5 @@ Weather Dashboard that provides todays weather as well as the weather for the ne
   
 [LIVE](https://sokolroman.github.io/WTTR-DASH/index.html)
 
-
+# Author
+Roman Sokol
