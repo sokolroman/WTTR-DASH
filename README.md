@@ -14,7 +14,7 @@ With WTTR DASH, you can:
 
 ## Preview
 
-  ![screenshot 1](/assets/imgs/WTTR DASH.JPG)
+  ![screenshot 1](/assets/imgs/WTTR DASH.jpg)
   
 ## License
 
