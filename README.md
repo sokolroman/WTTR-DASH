@@ -13,8 +13,7 @@ With WTTR DASH, you can:
 - WTTR DASH is ad-free and user-friendly, making it a convenient tool for checking the weather from the comfort of your home.
 
 ## Preview
-
-  ![screenshot 1](/assets/imgs/WTTR DASH.jpg)
+![WTTR DASH](https://user-images.githubusercontent.com/72160963/208315334-285354a6-e711-478b-9155-3f07909c60fb.jpg)
   
 ## License
 
