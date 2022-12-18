@@ -44,5 +44,13 @@
     gap: 1em;
     cursor: pointer;
   }
-  
+   header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #emblem {
+    height: 50px;
+  }
+
    
